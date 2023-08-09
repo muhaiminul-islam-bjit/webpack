@@ -48,14 +48,14 @@
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.9.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json}": [
       "eslint --fix"
     ]
-  },
-  "husky": {
-    "hooks":{
-      "pre-commit": "lint-staged"
-    }
   }
 }
