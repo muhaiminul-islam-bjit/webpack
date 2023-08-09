@@ -1,0 +1,10 @@
+@mixin pc() {
+  @media (min-width: $width-breakpoint + 1) {
+    @content;
+  }
+}
+@mixin sp() {
+  @media (max-width: $width-breakpoint) {
+    @content;
+  }
+}
