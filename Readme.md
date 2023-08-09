@@ -1,0 +1,1 @@
+chmod ug+x .husky/*

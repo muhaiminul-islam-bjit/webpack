@@ -1,9 +1,9 @@
-import './styles.css'
 import Image from './react.svg'
 import { ClickCounter } from './ClickCounter'
+import './styles.css'
 
 const App = () => {
-  const num = 9;
+  let num =0;
   return (
     <div>
       <h1>
