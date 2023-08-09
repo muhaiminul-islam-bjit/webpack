@@ -3,7 +3,7 @@ import Image from './react.svg'
 import { ClickCounter } from './ClickCounter'
 
 const App = () => {
-  const num = 6;
+  const num = 7;
   return (
     <div>
       <h1>
