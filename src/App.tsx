@@ -3,7 +3,6 @@ import { ClickCounter } from './ClickCounter'
 import './styles.css'
 
 const App = () => {
-  let num =0;
   return (
     <div>
       <h1>
