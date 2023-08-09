@@ -1,13 +1,18 @@
-import "./styles.css";
-import Image from "./react.svg";
+import './styles.css'
+import Image from './react.svg'
+import { ClickCounter } from './ClickCounter'
 
 const App = () => {
+  const num = 0
   return (
     <div>
-      <h1>react Typescript Webpack</h1>
-      <img src={Image} />
+      <h1>
+        React Typescript Webpack {process.env.NODE_ENV} - {process.env.name}
+      </h1>
+      <img src={Image} alt='test' />
+      <ClickCounter />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
