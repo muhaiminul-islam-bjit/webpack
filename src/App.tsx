@@ -4,6 +4,7 @@ import './design/styles/index.scss';
 import { Button } from './design/components/atoms/button/button';
 
 const App = () => {
+  console.log('Hello')
   return (
     <div>
       <h1>
