@@ -1,10 +1,15 @@
-import Image from './react.svg';
-import { ClickCounter } from './ClickCounter';
-import './design/styles/index.scss';
+import { Annotation } from './design/components/atoms/annotation/annotation';
 import { Button } from './design/components/atoms/button/button';
+import { Checkbox } from './design/components/atoms/checkbox/checkbox';
+import { Application } from './design/components/molecules/application/application';
+import { Modal } from './design/components/molecules/modal/modal';
+import { ModalCard } from './design/components/molecules/modalcard/modalcard';
+import { ClickCounter } from './ClickCounter';
+import Image from './react.svg';
+
+import './design/styles/index.scss';
 
 const App = () => {
-  console.log('Hello')
   return (
     <div>
       <h1>
@@ -13,6 +18,11 @@ const App = () => {
       <img src={Image} alt="test" />
       <Button>Click me</Button>
       <ClickCounter />
+      <ModalCard />
+      <Modal />
+      <Annotation />
+      <Checkbox />
+      <Application />
     </div>
   );
 };

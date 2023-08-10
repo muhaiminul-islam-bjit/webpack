@@ -2,8 +2,8 @@
 to: src/design/components/<%= atomic %>/<%= lowerName %>/<%= lowerName %>.stories.tsx
 ---
 
-import type { Meta, StoryObj } from '@storybook/react';
 import { <%= pascalName %> } from './<%= lowerName %>';
+import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof <%= pascalName %>> = {
   title: 'components/<%= atomic %>/<%= pascalName %>',
