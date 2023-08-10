@@ -12,5 +12,8 @@ export default meta;
 type Story = StoryObj<typeof Modal>;
 
 export const Normal: Story = {
-  args: {},
+  args: {
+    children: <>Hello world</>,
+    isOpen: true,
+  },
 };
