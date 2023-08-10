@@ -1,17 +1,17 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './button';
 
-export default {
+const meta: Meta<typeof Button> = {
   title: 'components/atoms/Button',
   component: Button,
-  argTypes: {
-  },
+  argTypes: {},
 };
 
-export const Primary = {
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const Primary: Story = {
   args: {
-    children: <>Click me</>
+    children: <>Click Me</>
   },
 };

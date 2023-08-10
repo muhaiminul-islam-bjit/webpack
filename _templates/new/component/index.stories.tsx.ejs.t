@@ -2,21 +2,18 @@
 to: src/design/components/<%= atomic %>/<%= lowerName %>/<%= lowerName %>.stories.tsx
 ---
 
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-
+import type { Meta, StoryObj } from '@storybook/react';
 import { <%= pascalName %> } from './<%= lowerName %>';
 
-export default {
+const meta: Meta<typeof <%= pascalName %>> = {
   title: 'components/<%= atomic %>/<%= pascalName %>',
   component: <%= pascalName %>,
-  argTypes: {
-  },
-} as ComponentMeta<typeof <%= pascalName %>>;
+  argTypes: {},
+};
 
-const Template: ComponentStory<typeof <%= pascalName %>> = args => <<%= pascalName %> {...args} />;
+export default meta;
+type Story = StoryObj<typeof <%= pascalName %>>;
 
-export const Normal = Template.bind({});
-Normal.args = {
-
+export const Normal: Story = {
+  args: {},
 };
