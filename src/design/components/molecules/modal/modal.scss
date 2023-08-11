@@ -11,6 +11,12 @@
   width: 100vw;
   height: 100vh;
   opacity: 1;
+  transition: opacity 0.3s ease-out;
+
+  &--closed {
+    pointer-events: none;
+    opacity: 0;
+  }
 
   &__background {
     position: absolute;
@@ -34,12 +40,7 @@
     box-shadow: 0 16px 32px rgba(#004eff, 0.1);
 
     @include pc {
-      width: 484px;
       padding: 32px 40px;
     }
   }
-}
-
-body {
-  height: 4000px;
 }
