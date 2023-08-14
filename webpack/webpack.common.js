@@ -1,3 +1,5 @@
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
 const path = require('path');
 const globImporter = require('node-sass-glob-importer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -25,6 +27,14 @@ module.exports = {
           'style-loader',
           // Translates CSS into CommonJS
           'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [autoprefixer(), cssnano()],
+              },
+            },
+          },
           // Compiles Sass to CSS
           {
             loader: 'sass-loader',

@@ -4,6 +4,7 @@ import { Annotation } from './design/components/atoms/annotation/annotation';
 import { Button } from './design/components/atoms/button/button';
 import { Checkbox } from './design/components/atoms/checkbox/checkbox';
 import { Application } from './design/components/molecules/application/application';
+import { HeroHeader } from './design/components/molecules/heroheader/heroheader';
 import { Modal } from './design/components/molecules/modal/modal';
 import { ModalCard } from './design/components/molecules/modalcard/modalcard';
 import { ClickCounter } from './ClickCounter';
@@ -38,6 +39,7 @@ const App = () => {
       <Modal isOpen={modalOpen} onCancel={hidModal}>
         <Button>Click me</Button>
       </Modal>
+      <HeroHeader />
     </div>
   );
 };
